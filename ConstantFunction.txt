@@ -1,0 +1,15 @@
+using System;
+
+namespace ConstantVariable
+{
+    class program
+    {
+        public const double PI = 3.14;
+        static void Main(string[] args) 
+        {
+            //PI = 5.25;                                ----------  In a Constant variable we can not change assign value.
+            Console.WriteLine("Constant Variable:"+ PI);
+            Console.ReadLine();
+        }
+    }
+}
