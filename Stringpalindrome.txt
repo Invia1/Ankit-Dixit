@@ -1,0 +1,28 @@
+using System;
+class StringPalindrome
+{
+    public static void Main(string[]args)
+    {
+        String str = "";                               // This is a String Variable to use in palindrome programme
+        Console.WriteLine("Palindrome is a function where we can difine a value(String Name) is same Where you can run your code like a RADAR & RACECAR these types of values whenever you can run your code is be same");
+        Console.WriteLine("Enter Your string");        // Print msg to user
+        str = Console.ReadLine();                      // to take a input through user
+
+
+        char[] arr = str.ToCharArray();                 // Convert your string to array
+        Array.Reverse(arr);                             // Reverse array
+        string str_reverse = new string(arr);         // convert array to string
+
+        if(str.Equals(str_reverse))                     // check your string to reverse string
+        {
+            Console.WriteLine("This is StringPalindrome");
+        }
+        else
+        {
+            Console.WriteLine("This is not a StringPalindrome");
+        }
+
+        Console.ReadLine();
+
+    }
+}
