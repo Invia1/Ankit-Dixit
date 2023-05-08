@@ -1,0 +1,127 @@
+using System;
+using System.Runtime.InteropServices;
+
+namespace FactorialNumber
+{
+   internal class fact
+    {
+        static void factorial(int num)
+        {
+            int sum = 1;
+           for(int i = 1; i<=num ; i++) 
+            
+            {
+                sum=sum*i;
+               
+            }
+
+           Console.WriteLine(sum);
+        }
+
+        static void Fabbonacci(int a, int b, int n)
+        {
+            if (n == 0)
+            {
+                return;
+            }
+            int c = a + b;
+            Console.WriteLine(c);
+            a = b; b=c;
+            Fabbonacci(a, b, n - 1);
+
+        }
+        static void PrimeNumber(int num)
+        {
+            int count = 0;
+             if (num == 0 || num == 1)
+            {
+                Console.WriteLine("this is not a prime number");
+            }
+             for (int i=2; i<num/2; i++)
+            {
+                if(num %i == 0)
+                {
+                    count++;
+                    
+                }
+                
+            }
+             if(count >0)
+            {
+                Console.WriteLine("Not Prime Number");
+            }
+            else
+            {
+                Console.WriteLine("Prime");
+            }
+            Console.ReadLine();
+        }
+        
+       public static void Data()
+        {
+            int num;
+            Console.WriteLine("Enter your number");
+            Console.WriteLine("Choose 1 for Factorial");
+            Console.WriteLine("Choose 2 for fabonnaci");
+            Console.WriteLine("Choose 3 for Prime");
+            int choice = int.Parse(Console.ReadLine());
+
+            switch (choice)
+            {
+                case 1:
+                    Console.WriteLine("Enter your number");
+                    num = int.Parse(Console.ReadLine());
+                    factorial(num);
+                    break;
+
+                case 2:
+                    Console.WriteLine("Enter your number");
+                    num = int.Parse(Console.ReadLine());
+                    int a = 0;
+                    int b = 1;
+
+                    Console.WriteLine(a);
+                    Console.WriteLine(b);
+                    Fabbonacci(a, b, num - 2);
+                    break;
+
+                case 3:
+                    Console.WriteLine("Enter your number to fine prime");
+                    num = int.Parse(Console.ReadLine());
+                    PrimeNumber(num);
+                    break;
+
+                default:
+                    Console.WriteLine("Please enter your choise");
+                    break;
+
+
+            }
+
+
+
+
+        }
+        public static void Main(string[] args) 
+        {
+            char ch;
+            Boolean flag = true;
+            while(flag)
+            {
+                Data();
+                Console.WriteLine("*****************************************");
+                Console.WriteLine("Do you want to continue. if yes Please enter Y for yes");
+                ch = Convert.ToChar(Console.ReadLine());
+                if (ch!= 'y' || ch != 'y')
+                    flag = false;
+
+            }
+
+            
+
+        }
+
+
+    }
+
+}
