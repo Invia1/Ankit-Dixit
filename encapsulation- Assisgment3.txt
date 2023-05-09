@@ -1,0 +1,42 @@
+using System;
+class  ShoppingProgram
+{
+    int amount;
+   
+   public int Amount
+    {
+        get { return amount; }
+        set
+        {
+            amount = value;
+            if (amount > 10000)
+            {
+                Console.WriteLine("You are elegible to shopping");
+            }
+            else
+            {
+                Console.WriteLine("Oops! You have not sufficient aount");
+            }
+
+        }
+    }
+
+    class Market
+    {
+        public static void Main(string[] args)
+        {
+            var obj = new ShoppingProgram();
+
+
+            Console.WriteLine("Enter mall name");
+            string str = Console.ReadLine();
+            Console.WriteLine("Enter you budget amount");
+            int amt = int.Parse(Console.ReadLine());
+            obj.Amount = amt;
+        }
+
+        
+    }
+   
+
+}
