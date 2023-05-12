@@ -1,0 +1,91 @@
+using System;
+using System.Collections;
+
+namespace ContactListProgram;
+
+class PersonContact
+{
+    ArrayList obj = new ArrayList();                // formate of collection
+
+    public void AddData()
+    {
+        Console.WriteLine("------------------------------------------------");
+        Console.WriteLine("------------------------------------------------");
+        Console.WriteLine("Person Name");
+        obj.Add(Console.ReadLine());
+       Console.WriteLine("Person Address");
+        obj.Add(Console.ReadLine());
+        Console.WriteLine("Person Contact");
+        obj.Add(Console.ReadLine());
+        Console.WriteLine("Person Mail");
+        obj.Add(Console.ReadLine());
+        Console.WriteLine("------------------------------------------------");
+        
+        Console.WriteLine("Your Details Mentioned in this program:\n");
+        Console.WriteLine("------------------------------------------------");
+
+        for (int i=0; i<obj.Count; i++)
+        {
+            Console.WriteLine(obj[i]);
+           
+
+        }
+
+        
+
+    }
+
+    public void updatedate()
+    {
+        obj[0] = "ankit";
+        Console.WriteLine("------------------------------------------------");
+        Console.WriteLine("\n\n\nUpdate List:");
+        Console.WriteLine("------------------------------------------------");
+        foreach (string item in obj)
+        {
+            Console.WriteLine(item);
+        }
+    }
+
+
+    public void RemoveData()
+    {
+        Console.WriteLine("------------------------------------------------");
+        
+
+        Console.WriteLine("\n Enter the Data which you want to remove");
+        Console.WriteLine("------------------------------------------------");
+        Console.WriteLine("Person Name");
+        obj.Remove(Console.ReadLine());
+        Console.WriteLine("Person Address");
+        obj.Remove(Console.ReadLine());
+        Console.WriteLine("Person Contact");
+        obj.Remove(Console.ReadLine());
+        Console.WriteLine("Person Mail");
+        obj.Remove(Console.ReadLine());
+        Console.WriteLine("------------------------------------------------");
+        Console.WriteLine("------------------------------------------------");
+        Console.WriteLine("After Use Remove keyword:\n");
+        Console.WriteLine("------------------------------------------------");
+
+        for (int i = 0; i < obj.Count; i++)
+        {
+            Console.WriteLine(obj[i]);
+
+        }
+
+    }
+
+
+
+    public static void Main()
+    {
+        PersonContact obj= new PersonContact();
+        obj.AddData();
+        obj.RemoveData();
+        obj.updatedate();
+
+    }
+}
+
+
