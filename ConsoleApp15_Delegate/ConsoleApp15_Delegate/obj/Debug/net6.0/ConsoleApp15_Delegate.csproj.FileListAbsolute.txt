@@ -1,0 +1,15 @@
+C:\Users\Invia-ILC\source\repos\ConsoleApp15_Delegate\ConsoleApp15_Delegate\obj\Debug\net6.0\ConsoleApp15_Delegate.csproj.AssemblyReference.cache
+C:\Users\Invia-ILC\source\repos\ConsoleApp15_Delegate\ConsoleApp15_Delegate\obj\Debug\net6.0\ConsoleApp15_Delegate.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Invia-ILC\source\repos\ConsoleApp15_Delegate\ConsoleApp15_Delegate\obj\Debug\net6.0\ConsoleApp15_Delegate.AssemblyInfoInputs.cache
+C:\Users\Invia-ILC\source\repos\ConsoleApp15_Delegate\ConsoleApp15_Delegate\obj\Debug\net6.0\ConsoleApp15_Delegate.AssemblyInfo.cs
+C:\Users\Invia-ILC\source\repos\ConsoleApp15_Delegate\ConsoleApp15_Delegate\obj\Debug\net6.0\ConsoleApp15_Delegate.csproj.CoreCompileInputs.cache
+C:\Users\Invia-ILC\source\repos\ConsoleApp15_Delegate\ConsoleApp15_Delegate\bin\Debug\net6.0\ConsoleApp15_Delegate.exe
+C:\Users\Invia-ILC\source\repos\ConsoleApp15_Delegate\ConsoleApp15_Delegate\bin\Debug\net6.0\ConsoleApp15_Delegate.deps.json
+C:\Users\Invia-ILC\source\repos\ConsoleApp15_Delegate\ConsoleApp15_Delegate\bin\Debug\net6.0\ConsoleApp15_Delegate.runtimeconfig.json
+C:\Users\Invia-ILC\source\repos\ConsoleApp15_Delegate\ConsoleApp15_Delegate\bin\Debug\net6.0\ConsoleApp15_Delegate.dll
+C:\Users\Invia-ILC\source\repos\ConsoleApp15_Delegate\ConsoleApp15_Delegate\bin\Debug\net6.0\ConsoleApp15_Delegate.pdb
+C:\Users\Invia-ILC\source\repos\ConsoleApp15_Delegate\ConsoleApp15_Delegate\obj\Debug\net6.0\ConsoleApp15_Delegate.dll
+C:\Users\Invia-ILC\source\repos\ConsoleApp15_Delegate\ConsoleApp15_Delegate\obj\Debug\net6.0\refint\ConsoleApp15_Delegate.dll
+C:\Users\Invia-ILC\source\repos\ConsoleApp15_Delegate\ConsoleApp15_Delegate\obj\Debug\net6.0\ConsoleApp15_Delegate.pdb
+C:\Users\Invia-ILC\source\repos\ConsoleApp15_Delegate\ConsoleApp15_Delegate\obj\Debug\net6.0\ConsoleApp15_Delegate.genruntimeconfig.cache
+C:\Users\Invia-ILC\source\repos\ConsoleApp15_Delegate\ConsoleApp15_Delegate\obj\Debug\net6.0\ref\ConsoleApp15_Delegate.dll
