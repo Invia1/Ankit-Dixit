@@ -9,12 +9,13 @@ using HMS_Program.Class;
 
 namespace HMS_Program.IterFace
 {
-    internal interface Interface1
+    public interface Interface1
     {
         int addpatient(Patient temp);
         List<Patient> display();
 
         void updatepatient(int id);
+        void DeletePatient(int id);
 
 
     }

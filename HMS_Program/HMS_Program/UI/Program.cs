@@ -13,7 +13,7 @@ namespace HMS_Program.UI
     {
         public static void Main()
         {
-            Interface1 detail = new GeneralMedicine();
+            Interface1 detail = new GeneralMedicine();          // Object of Interface
             Interface1 detail1 = new Dental();
             Interface1 detail2 = new Orthopedist();
             int a;
@@ -21,9 +21,12 @@ namespace HMS_Program.UI
             while (flag)
             {
                 Console.WriteLine("_____________________");
+                Console.WriteLine("Hospital Management Program");
+                Console.WriteLine("Three DepartMent present in this program");
+                Console.WriteLine("_____________________");
                 Console.WriteLine("Press 1 for General Medicine");
                 Console.WriteLine("Press 2 for Dental");
-                Console.WriteLine("Press 3 for OrthoPedist");
+                Console.WriteLine("Press 3 for OrthoPedi");
                 Console.WriteLine("_____________________");
 
                 Console.WriteLine("Enter your Choice");
@@ -37,6 +40,8 @@ namespace HMS_Program.UI
                             Console.WriteLine("Press 1 For Add Patient of general medicine..");
                             Console.WriteLine("Press 2 For Display Patient list of general medicine..");
                             Console.WriteLine("Press 3 for Update Patient List of general medicine");
+                            Console.WriteLine("Press 4 for Delete Patient List of general medicine");
+
                             Console.WriteLine("-----------------------------------------------------------");
                             int n;
                             Console.WriteLine("Enter your choice...");
@@ -81,9 +86,15 @@ namespace HMS_Program.UI
                                     break;
 
                                 case 3:
-                                   Console.WriteLine("To update te  the patient please enter Registration id");
+                                   Console.WriteLine("To update   the patient please enter Registration id");
                                     int id=Convert.ToInt32(Console.ReadLine());
                                     detail.updatepatient(id);
+                                    break;
+
+                                case 4:
+                                    Console.WriteLine("To Delete the patient please enter Registration id");
+                                    int PatientID = Convert.ToInt32(Console.ReadLine());
+                                    detail.DeletePatient(PatientID);
                                     break;
 
 
@@ -102,6 +113,7 @@ namespace HMS_Program.UI
                             Console.WriteLine("Enter 1 For Add Patient of Dental..");
                             Console.WriteLine("Enter 2 For Display Patient list of Dental..");
                             Console.WriteLine("Press 3 for Update Patient List of Dental");
+                            Console.WriteLine("Press 4 for Delete Patient List of general medicine");
                             Console.WriteLine("----------------------------------------------------------");
 
                             int n;
@@ -145,8 +157,15 @@ namespace HMS_Program.UI
                                 case 3:
                                     Console.WriteLine("To update te  the patient please enter Registration id");
                                     int id = Convert.ToInt32(Console.ReadLine());
-                                    detail.updatepatient(id);
+                                    detail1.updatepatient(id);
                                     break;
+
+                                case 4:
+                                    Console.WriteLine("To Delete the patient please enter Registration id");
+                                    int PatientID = Convert.ToInt32(Console.ReadLine());
+                                    detail1.DeletePatient(PatientID);
+                                    break;
+                                    
                                 default:
                                     Console.WriteLine("Enter valid choice ");
                                     break;
@@ -162,6 +181,7 @@ namespace HMS_Program.UI
                             Console.WriteLine("Enter 1 For Add Patient of Ortho..");
                             Console.WriteLine("Enter 2 For Display Patient list of Ortho..");
                             Console.WriteLine("Press 3 for Update Patient List of Ortho");
+                            Console.WriteLine("Press 4 for Delete Patient List of general medicine");
                             Console.WriteLine("----------------------------------------------------------");
 
                             int n;
@@ -206,7 +226,14 @@ namespace HMS_Program.UI
                                 case 3:
                                     Console.WriteLine("To update te  the patient please enter Registration id");
                                     int id = Convert.ToInt32(Console.ReadLine());
-                                    detail.updatepatient(id);
+                                    detail2.updatepatient(id);
+                                    break;
+
+
+                                case 4:
+                                    Console.WriteLine("To Delete the patient please enter Registration id");
+                                    int PatientID = Convert.ToInt32(Console.ReadLine());
+                                    detail2.DeletePatient(PatientID);
                                     break;
 
                                 default:

@@ -79,6 +79,56 @@ namespace HMS_Program.Class
             
         }
 
+        public void DeletePatient(int id)
+        {
+            List<Patient> list = display();
+            try
+            {
+                foreach (Patient pat in list)
+                {
+                    if (pat.PatientID == id)
+                    {
+                        list.Remove(pat);
+                    }
+                }
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
+        }
+
+        //public void DeletePatient (int id)
+        //{
+        //    List <Patient> list = display();
+        //    {
+        //        foreach(Patient pat in list)
+        //        {
+        //            if(pat.PatientID ==id)
+        //            {
+        //                Console.WriteLine("First Name");
+        //                pat.FirstName = Console.ReadLine();
+        //                Console.WriteLine("Last Name");
+        //                pat.LastName = Console.ReadLine();
+        //                Console.WriteLine("Contact Number");
+        //                pat.ContactNo = Convert.ToDouble(Console.ReadLine());
+        //                Console.WriteLine("age");
+        //                pat.Age = int.Parse(Console.ReadLine());
+        //                Console.WriteLine("Gender");
+        //                pat.Gender = Console.ReadLine();
+        //                Console.WriteLine("Adhar No");
+        //                pat.AdharNo = Convert.ToDouble(Console.ReadLine());
+        //                Console.WriteLine("Address");
+        //                pat.Address = Console.ReadLine();
+        //                Console.WriteLine("Consultant");
+        //                pat.Speciality = Console.ReadLine();
+        //            }   
+        //        }
+        //    }
+        //}
+
     }
 
     class Dental : Interface1
@@ -149,6 +199,37 @@ namespace HMS_Program.Class
             }
 
         }
+
+        public void DeletePatient(int id)
+        {
+            List<Patient> list = display();
+            {
+                foreach (Patient pat in list)
+                {
+                    if (pat.PatientID == id)
+                    {
+                        Console.WriteLine("First Name");
+                        pat.FirstName = Console.ReadLine();
+                        Console.WriteLine("Last Name");
+                        pat.LastName = Console.ReadLine();
+                        Console.WriteLine("Contact Number");
+                        pat.ContactNo = Convert.ToDouble(Console.ReadLine());
+                        Console.WriteLine("age");
+                        pat.Age = int.Parse(Console.ReadLine());
+                        Console.WriteLine("Gender");
+                        pat.Gender = Console.ReadLine();
+                        Console.WriteLine("Adhar No");
+                        pat.AdharNo = Convert.ToDouble(Console.ReadLine());
+                        Console.WriteLine("Address");
+                        pat.Address = Console.ReadLine();
+                        Console.WriteLine("Consultant");
+                        pat.Speciality = Console.ReadLine();
+                    }
+                }
+            }
+        }
+
+
 
     }
 
@@ -223,5 +304,36 @@ namespace HMS_Program.Class
 
         }
 
+        public void DeletePatient(int id)
+        {
+            List<Patient> list = display();
+            {
+                foreach (Patient pat in list)
+                {
+                    if (pat.PatientID == id)
+                    {
+                        Console.WriteLine("First Name");
+                        pat.FirstName = Console.ReadLine();
+                        Console.WriteLine("Last Name");
+                        pat.LastName = Console.ReadLine();
+                        Console.WriteLine("Contact Number");
+                        pat.ContactNo = Convert.ToDouble(Console.ReadLine());
+                        Console.WriteLine("age");
+                        pat.Age = int.Parse(Console.ReadLine());
+                        Console.WriteLine("Gender");
+                        pat.Gender = Console.ReadLine();
+                        Console.WriteLine("Adhar No");
+                        pat.AdharNo = Convert.ToDouble(Console.ReadLine());
+                        Console.WriteLine("Address");
+                        pat.Address = Console.ReadLine();
+                        Console.WriteLine("Consultant");
+                        pat.Speciality = Console.ReadLine();
+                    }
+                }
+            }
+        }
+
     }
+
+
 }
